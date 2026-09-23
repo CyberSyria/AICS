@@ -1,0 +1,52 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+backend/samp.db
+backend/*.db
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+
+# Storage & uploads
+storage/
+!storage/.gitkeep
+backend/storage/
+uploads/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build / deploy
+*.tar.gz
+.vercel
+dist/
+build/
+
+# Alembic (keep versions, ignore local)
+*.pyc

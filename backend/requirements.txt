@@ -1,0 +1,26 @@
+# Security Assessment Management Platform — backend
+# Compatible with Python 3.12–3.14 (uses wheels; avoid older pydantic that needs Rust build)
+fastapi>=0.115.6,<0.117
+uvicorn[standard]>=0.34.0,<0.36
+gunicorn>=23.0.0,<24
+pydantic>=2.12.0,<2.14
+pydantic-settings>=2.7.0,<2.12
+sqlalchemy>=2.0.36,<2.1
+alembic>=1.14.0,<1.17
+psycopg[binary]>=3.2.10,<3.4
+argon2-cffi>=23.1.0,<26
+python-multipart>=0.0.20,<0.1
+python-jose[cryptography]>=3.3.0,<3.4
+email-validator>=2.2.0,<2.3
+httpx>=0.28.1,<0.29
+bleach>=6.2.0,<7
+markdown>=3.7,<4
+jinja2>=3.1.5,<4
+aiofiles>=24.1.0,<25
+boto3>=1.35.76,<1.37
+# PDF: WeasyPrint needs GTK/Pango on Windows — optional; HTML export always works
+weasyprint>=63.1,<65; platform_system != "Windows"
+pytest>=8.3.4,<9
+pytest-asyncio>=0.25.0,<0.26
+anyio>=4.7.0,<5
+click>=8.1.8,<9

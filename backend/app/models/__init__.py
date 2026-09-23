@@ -1,0 +1,93 @@
+"""Import all models so Alembic and Base.metadata see every table."""
+
+from app.models.identity import (
+    AppSetting,
+    Permission,
+    Role,
+    RolePermission,
+    User,
+    UserPreferences,
+)
+from app.models.lookups import (
+    AssetType,
+    CustomFieldDefinition,
+    CustomFieldValue,
+    FindingStatus,
+    PhaseStatus,
+    ProjectType,
+    SeverityLevel,
+    ToolCategory,
+)
+from app.models.platform import (
+    AuditLog,
+    GeneratedReport,
+    Notification,
+    ReportSection,
+    ReportTemplate,
+)
+from app.models.projects import (
+    Project,
+    ProjectMember,
+    ProjectPhase,
+    ProjectPhaseTool,
+    Task,
+    TaskComment,
+    TimeEntry,
+)
+from app.models.security_data import (
+    Asset,
+    Evidence,
+    Finding,
+    FindingHistory,
+    FindingIdCounter,
+    FindingTemplate,
+    Retest,
+    Tool,
+)
+from app.models.workflows import (
+    Workflow,
+    WorkflowPhase,
+    WorkflowPhaseChecklistItem,
+    WorkflowPhaseTool,
+)
+
+__all__ = [
+    "AppSetting",
+    "Permission",
+    "Role",
+    "RolePermission",
+    "User",
+    "UserPreferences",
+    "AssetType",
+    "CustomFieldDefinition",
+    "CustomFieldValue",
+    "FindingStatus",
+    "PhaseStatus",
+    "ProjectType",
+    "SeverityLevel",
+    "ToolCategory",
+    "AuditLog",
+    "GeneratedReport",
+    "Notification",
+    "ReportSection",
+    "ReportTemplate",
+    "Project",
+    "ProjectMember",
+    "ProjectPhase",
+    "ProjectPhaseTool",
+    "Task",
+    "TaskComment",
+    "TimeEntry",
+    "Asset",
+    "Evidence",
+    "Finding",
+    "FindingHistory",
+    "FindingIdCounter",
+    "FindingTemplate",
+    "Retest",
+    "Tool",
+    "Workflow",
+    "WorkflowPhase",
+    "WorkflowPhaseChecklistItem",
+    "WorkflowPhaseTool",
+]
